@@ -1,0 +1,146 @@
+@import url("https://fonts.google.com/specimen/Spartan");
+
+$vdm: hsl(300, 43%, 22%);
+$dgm: hsl(303, 10%, 53%);
+$lgm: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+$spink: hsl(333, 80%, 67%);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Spartan, sans-serif;
+  font-size: 15px;
+}
+
+@media screen and (max-width:768px) {
+body {
+    height: 100vh;
+}
+
+.col1 {
+  padding-top: 70px;
+  text-align: center;
+  background: url(..//images/bg-pattern-top-mobile.svg) top no-repeat;
+  h1 {
+    color: $vdm;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  p {
+      color: auto;
+      margin-bottom: 30px;
+  }
+}
+.col2 {
+   #star-boxa, #star-boxb, #star-boxc {
+       background-color: $lgm;
+       text-align: center;
+       padding-top: 5px;
+       padding-bottom: 5px;
+       margin-bottom: 15px;
+       width: auto;
+       h6 {
+           color: $vdm;
+           font-weight: 700;
+       }
+       &:last-child {
+           margin-bottom: 50px;
+       }
+   } 
+}
+.card {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: $vdm;
+    color: $white;
+    .card-title {
+        display: flex;
+        #image {
+            height: 50px;
+        }
+        #name{
+            margin-left: 5%;
+        }
+        p {
+            color: $spink;
+        }
+    }
+
+}
+}
+
+@media screen and (min-width:768px) {
+    body {
+        height: 100vh;
+        background: url(..///images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+    }
+    #ratings {
+        background: url(..//images/bg-pattern-top-mobile.svg) top no-repeat;
+        padding-top: 70px;
+    }
+    .col1 {
+        padding-right: 15%;
+        h1 {
+          color: $vdm;
+          font-weight: 700;
+          margin-bottom: auto;
+        }
+        p {
+            color: auto;
+            margin-bottom: 80px;
+        }
+      } 
+      .col2 {
+        #star-boxa, #star-boxb, #star-boxc {
+            background-color: $lgm;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            width: auto;
+            h6 {
+                color: $vdm;
+                font-weight: 700;
+            }
+            &:last-child {
+                margin-bottom: 50px;
+            }
+        } 
+        #star-boxb {
+            margin-left: 10%;
+            width: auto;
+        }
+        #star-boxc {
+            margin-left: 15%;
+            width: auto;
+        }
+     }
+     .card {
+        border-radius: 10px;
+        background-color: $vdm;
+        color: $white;
+        .card-title {
+            display: flex;
+            #image {
+                height: 50px;
+            }
+            #name{
+                margin-left: 5%;
+            }
+            p {
+                color: $spink;
+            }
+        }
+    }
+    .col4 {
+       margin-top: 15px; 
+    }
+    .col5 {
+        margin-top: 30px;
+    }
+}
